@@ -1,0 +1,13 @@
+body {
+  background: red;
+}
+
+.yellow {
+  background: yellow;
+}
+.green {
+  background: green;
+}
+.my-color {
+  background: rgb(101, 155, 80);
+}
