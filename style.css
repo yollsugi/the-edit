@@ -1,0 +1,187 @@
+#menu {
+  height: 60px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+#menu .center-wrap {
+  max-width: 1170px;
+  margin: 0 auto;
+  position: relative;
+}
+
+#menu .icon-wrapper {
+  height: 60px;
+  line-height: 60px;
+  position: absolute;
+  right: 0;
+}
+
+#menu .icon-wrapper .menu-btn {
+  margin-right: 20px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+#menu .icon-wrapper .search-btn {
+  margin-right: 30px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+#title .logo {
+  width: 300px;
+  margin: 0 auto;
+  display: block;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+#title .logo img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  #title .logo {
+    width: 40%;
+  }
+}
+
+#content {
+  background: #262626;
+}
+
+#content .row {
+  width: 100vw;
+  height: 440px;
+}
+
+#content .row .col-md-12 {
+  border-bottom: 2px solid #fff;
+  width: 100%;
+  height: 100%;
+}
+
+#content .row .col-md-6 {
+  border-bottom: 2px solid #fff;
+  width: 100%;
+  height: 100%;
+}
+
+#content .row .col-md-6:first-child {
+  border-right: 2px solid #fff;
+}
+
+@media only screen and (max-width: 768px) {
+  #content .row .col-md-6:first-child {
+    border-right: none;
+  }
+}
+
+#content .item {
+  height: 100%;
+  position: relative;
+}
+
+#content .item .author {
+  color: rgba(255, 255, 255, 0.9);
+  left: 20px;
+  right: 20px;
+  top: 20px;
+  position: absolute;
+}
+
+#content .item .author img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  border-radius: 50px;
+}
+
+#content .item .author .name {
+  font-size: 13px;
+}
+
+#content .item .title-wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+#content .item .title-wrap .category {
+  color: white;
+  border-bottom: 2px solid #ff6700;
+  line-height: 20px;
+  padding-bottom: 3px;
+  font-weight: 700;
+  font-size: 13px;
+  font-family: Roboto;
+  width: 33.05px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+#content .item .title-wrap .title {
+  color: white;
+  font-size: 40px;
+  line-height: 45px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 768px) {
+  #content .item .title-wrap .title {
+    font-size: 24px;
+    white-space: nowrap;
+  }
+}
+
+#content .item .back-cover {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0.6;
+}
+
+#content .item .back-cover.back-cover-01 {
+  background: center/cover no-repeat url("http://the-edit.co.kr/wp-content/uploads/2018/09/applewatch4.jpg");
+}
+
+#content .item .back-cover.back-cover-02 {
+  background: center/cover no-repeat url("http://the-edit.co.kr/wp-content/uploads/2018/09/boydechanel_main2.jpg");
+}
+
+#content .item .back-cover.back-cover-03 {
+  background: center/cover no-repeat url("http://the-edit.co.kr/wp-content/uploads/2018/09/DSC00101_main.jpg");
+}
+
+#pagination {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  height: 70px;
+  padding: 20px;
+}
+
+#footer {
+  height: 70px;
+}
+
+.back-to-top {
+  cursor: pointer;
+  position: fixed;
+  bottom: 8em;
+  right: 25px;
+  text-decoration: none;
+  color: #000000;
+  background-color: rgba(235, 235, 235, 0.8);
+  font-size: 12px;
+  padding: 10px 15px;
+  z-index: 99;
+  border-radius: 40px;
+  -webkit-transition: background 0.25s linear;
+  transition: background 0.25s linear;
+}
+/*# sourceMappingURL=style.css.map */
