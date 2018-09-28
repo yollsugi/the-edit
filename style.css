@@ -48,6 +48,7 @@
 
 #content {
   background: #262626;
+  overflow: hidden;
 }
 
 #content .row {
@@ -157,6 +158,12 @@
 
 #content .item .back-cover.back-cover-03 {
   background: center/cover no-repeat url("http://the-edit.co.kr/wp-content/uploads/2018/09/DSC00101_main.jpg");
+}
+
+@media only screen and (max-width: 768px) {
+  #content {
+    min-height: 1760px;
+  }
 }
 
 #pagination {

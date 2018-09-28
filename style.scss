@@ -42,6 +42,7 @@
 
 #content {
   background: #262626;
+  overflow: hidden;
   .row {
     width: 100vw;
     height: 440px;
@@ -135,6 +136,9 @@
           url('http://the-edit.co.kr/wp-content/uploads/2018/09/DSC00101_main.jpg');
       }
     }
+  }
+  @media only screen and (max-width: 768px) {
+    min-height: 1760px;
   }
 }
 
