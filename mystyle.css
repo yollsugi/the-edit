@@ -1,13 +1,29 @@
 body {
-  background: red;
+  background: beige;
 }
 
-.yellow {
-  background: yellow;
+.icons {
+  background: grey;
+  height: 60px;
+  border: 1px solid red;
 }
-.green {
-  background: green;
+.main-logo {
+  background: grey;
+  height: 185px;
+  border: 1px solid red;
 }
-.my-color {
-  background: rgb(101, 155, 80);
+.item-01 {
+  background: grey;
+  height: 438px;
+  border: 1px solid red;
+}
+.item-02 {
+  background: grey;
+  height: 438px;
+  border: 1px solid red;
+}
+.item-03 {
+  background: grey;
+  height: 438px;
+  border: 1px solid red;
 }

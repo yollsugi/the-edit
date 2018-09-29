@@ -1,0 +1,36 @@
+body {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.block-01 {
+  background: grey;
+  height: 30px;
+}
+.block-02 {
+  background: black;
+  height: 60px;
+  margin-top: 60px;
+}
+.block-03 {
+  background: red;
+  height: 800px;
+  margin-top: 40px;
+}
+.block-04 {
+  background: grey;
+  height: 15px;
+  margin-top: 40px;
+}
+.block-05 {
+  background: lightgray;
+  height: 250px;
+  margin-top: 40px;
+}
+.block-06 {
+  background: grey;
+  height: 400px;
+  margin-top: 40px;
+}
