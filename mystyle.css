@@ -1,73 +1,182 @@
-body {
-  background: beige;
+.nav {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 }
 
-.icons {
-  background: grey;
+.nav .icons {
   height: 60px;
-  border: 1px solid blue;
+}
+
+.nav .icons .icons-wrap {
+  position: absolute;
+  right: 55px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.nav .icons .fas {
+  padding-right: 15px;
+  padding-left: 15px;
+  font-size: 13px;
+  cursor: pointer;
 }
 
 .main-logo {
-  background: darkcyan;
   height: 185px;
-  border: 1px solid red;
   font-size: 50px;
   font-family: 'Noto Sans KR', sans-serif;
 }
 
 .main-logo img {
   width: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
-.item-01 {
-  background: grey;
+.item-01,
+.item-02,
+.item-03 {
   height: 438px;
-  border: 1px solid red;
   font-family: 'Roboto', sans-serif;
-  background-image: url(http://the-edit.co.kr/wp-content/uploads/2018/11/IMG_6310_main.jpg);
   background-position: center center;
   background-size: cover;
 }
 
-.item-01 .author .name {
+.item-01 .author,
+.item-02 .author,
+.item-03 .author {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+
+.item-01 .author img,
+.item-02 .author img,
+.item-03 .author img {
+  border-radius: 100px;
+  vertical-align: middle;
+}
+
+.item-01 .author .name,
+.item-02 .author .name,
+.item-03 .author .name {
   color: rgba(255, 255, 255, 0.9);
   font-size: 13px;
   font-family: 'Noto Sans KR', sans-serif;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+  -webkit-transition: color 0.6s ease-in-out;
+  transition: color 0.6s ease-in-out;
+  cursor: pointer;
 }
 
-.item-01 .title-box {
+.item-01 .author .name:hover,
+.item-02 .author .name:hover,
+.item-03 .author .name:hover {
+  color: #ff6700;
+  -webkit-transition: color 0.6s ease-in-out;
+  transition: color 0.6s ease-in-out;
+}
+
+.item-01 .title-box,
+.item-02 .title-box,
+.item-03 .title-box {
   color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
-.item-01 .title-box .category {
+.item-01 .title-box .category,
+.item-02 .title-box .category,
+.item-03 .title-box .category {
   font-size: 13px;
   border-bottom: 2px solid #ff6700;
   font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  padding-bottom: 3px;
+  line-height: 20px;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
-.item-01 .title-box .title {
+.item-01 .title-box .category::-moz-selection,
+.item-02 .title-box .category::-moz-selection,
+.item-03 .title-box .category::-moz-selection {
+  /* Code for Firefox */
+  background: black;
+}
+
+.item-01 .title-box .category::selection,
+.item-02 .title-box .category::selection,
+.item-03 .title-box .category::selection {
+  background: black;
+}
+
+.item-01 .title-box .title,
+.item-02 .title-box .title,
+.item-03 .title-box .title {
   font-size: 40px;
   font-family: 'Noto Sans KR', sans-serif;
   font-weight: 700;
+  margin-top: 45px;
+  white-space: nowrap;
+  -webkit-transition: color 0.6s ease-in-out;
+  transition: color 0.6s ease-in-out;
+  cursor: pointer;
 }
 
-.item-01 .overlay {
+.item-01 .title-box .title::-moz-selection,
+.item-02 .title-box .title::-moz-selection,
+.item-03 .title-box .title::-moz-selection {
+  /* Code for Firefox */
+  background: black;
+}
+
+.item-01 .title-box .title::selection,
+.item-02 .title-box .title::selection,
+.item-03 .title-box .title::selection {
+  background: black;
+}
+
+.item-01 .title-box .title:hover,
+.item-02 .title-box .title:hover,
+.item-03 .title-box .title:hover {
+  color: #ff6700;
+  -webkit-transition: color 0.6s ease-in-out;
+  transition: color 0.6s ease-in-out;
+}
+
+.item-01 .overlay,
+.item-02 .overlay,
+.item-03 .overlay {
   background: #262626;
   height: 100%;
   width: 100%;
   opacity: 0.6;
 }
 
+.item-01 {
+  background-image: url(http://the-edit.co.kr/wp-content/uploads/2018/11/IMG_6310_main.jpg);
+}
+
 .item-02 {
-  background: grey;
-  height: 438px;
-  border: 1px solid red;
+  background-image: url(http://the-edit.co.kr/wp-content/uploads/2019/01/nikeairmax_dai.jpg);
+  border-top: 2px solid white;
+  border-right: 1px solid white;
 }
 
 .item-03 {
-  background: grey;
-  height: 438px;
-  border: 1px solid red;
+  background-image: url(http://the-edit.co.kr/wp-content/uploads/2019/01/32000792088_1ef5094fe3_o.jpg);
+  border-top: 2px solid white;
+  border-left: 1px solid white;
 }
 /*# sourceMappingURL=mystyle.css.map */

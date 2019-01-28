@@ -1,49 +1,117 @@
 body {
-  background: beige;
+}
+.nav {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  .icons {
+    height: 60px;
+    .icons-wrap {
+      position: absolute;
+      right: 55px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    .fas {
+      padding-right: 15px;
+      padding-left: 15px;
+      font-size: 13px;
+      cursor: pointer;
+    }
+  }
 }
 
-.icons {
-  background: grey;
-  height: 60px;
-  border: 1px solid blue;
-}
 .main-logo {
-  background: darkcyan;
   height: 185px;
-  border: 1px solid red;
   font-size: 50px;
   font-family: 'Noto Sans KR', sans-serif;
   img {
     width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
-.item-01 {
-  background: grey;
+
+// 공통적인 속성들!
+.item-01,
+.item-02,
+.item-03 {
   height: 438px;
-  border: 1px solid red;
   font-family: 'Roboto', sans-serif;
-  background-image: url(http://the-edit.co.kr/wp-content/uploads/2018/11/IMG_6310_main.jpg);
+
   background-position: center center;
   background-size: cover;
 
   .author {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    img {
+      border-radius: 100px;
+      vertical-align: middle;
+    }
     .name {
       color: rgba(255, 255, 255, 0.9);
       font-size: 13px;
       font-family: 'Noto Sans KR', sans-serif;
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 10px;
+      transition: color 0.6s ease-in-out;
+      cursor: pointer;
+      &:hover {
+        color: rgb(255, 103, 0);
+        transition: color 0.6s ease-in-out;
+      }
     }
   }
   .title-box {
     color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     .category {
       font-size: 13px;
       border-bottom: 2px solid rgb(255, 103, 0);
       font-family: 'Roboto', sans-serif;
+      font-weight: 700;
+      padding-bottom: 3px;
+      line-height: 20px;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      &::-moz-selection {
+        /* Code for Firefox */
+        background: black;
+      }
+
+      &::selection {
+        background: black;
+      }
     }
     .title {
       font-size: 40px;
       font-family: 'Noto Sans KR', sans-serif;
       font-weight: 700;
+      margin-top: 45px;
+      white-space: nowrap;
+      transition: color 0.6s ease-in-out;
+      cursor: pointer;
+
+      &::-moz-selection {
+        /* Code for Firefox */
+        background: black;
+      }
+
+      &::selection {
+        background: black;
+      }
+
+      &:hover {
+        color: rgb(255, 103, 0);
+        transition: color 0.6s ease-in-out;
+      }
     }
   }
   .overlay {
@@ -53,13 +121,20 @@ body {
     opacity: 0.6;
   }
 }
-.item-02 {
-  background: grey;
-  height: 438px;
-  border: 1px solid red;
+
+// 개별적인 속성들!
+.item-01 {
+  background-image: url(http://the-edit.co.kr/wp-content/uploads/2018/11/IMG_6310_main.jpg);
 }
+.item-02 {
+  background-image: url(http://the-edit.co.kr/wp-content/uploads/2019/01/nikeairmax_dai.jpg);
+  border-top: 2px solid white;
+  border-right: 1px solid white;
+}
+
 .item-03 {
-  background: grey;
-  height: 438px;
-  border: 1px solid red;
+  background-image: url(http://the-edit.co.kr/wp-content/uploads/2019/01/32000792088_1ef5094fe3_o.jpg);
+
+  border-top: 2px solid white;
+  border-left: 1px solid white;
 }
